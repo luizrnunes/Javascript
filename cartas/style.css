@@ -4,7 +4,7 @@
     border: 0;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,52 +12,58 @@
     height: 100vh;
 }
 
-body{
+body {
     background-color: #f0f0f0;
     font-family: sans-serif;
 }
 
-button{
+button {
     padding: 10px 30px;
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #000;
     border-radius: 25px;
     font-size: 1.2rem;
 }
 
-.carta{
+.carta {
     width: 250px;
     height: 350px;
-    background-color: #ffffff;
+    background-color: #fff;
     margin-bottom: 50px;
-    box-shadow: rgba(0,0,0, 0.4) -2px 2px;
-    /* position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0, 0.4) 0px 2px 4px;
+    /* position
         fixed: fixa o elemento no documento
-        relative
-        absolute: fixa o elemento com referencia ao relative
-
-        Neste exemplo os elementos absolute vão se posicionar na classe carta e não na classe container ou no documento
+        relative: referência para o absolute
+        absolute: fixa o elemento com referência ao relative
+        
+        Neste exemplo os elementos absolute vão se posicionar na clsse carta e não na classe container ou no documento 
     */
-    position: relative;
+
+    position: relative; 
 }
 
-.canto{
+.canto {
     position: absolute;
     font-size: 2rem;
     text-align: center;
 }
 
-#supEsq{
-    top:20px;
+#supEsq {
+    top: 20px;
     left: 15px;
 }
 
-#infDir{
+#infDir {
     bottom: 25px;
     right: 15px;
+    transform: rotate(180deg);
 }
 
-#centroCarta{
-    text-align: center;
-
+.centro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 6rem;
 }
